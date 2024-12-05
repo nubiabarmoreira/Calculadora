@@ -1,11 +1,11 @@
 public class Main {
     public static void main (String[] args) {
         int num1 = 15;
-        int num2 = 1;
-        char operador = 'c';
+        int num2 = 5;
+        char operador = 'a';
 
         if (operador == 'a'){
-            System.out.println(num1 + " + " + num2 + " = " + num1+num2);
+            System.out.println(num1 + " + " + num2 + " = " + (num1+num2));
         } else if (operador == 'b') {
             System.out.println(num1 + " - " + num2 + " = " + (num1-num2));
         } else if (operador == 'c') {
