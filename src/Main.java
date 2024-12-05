@@ -8,15 +8,15 @@ public class Main {
         System.out.println("Agora digite o segundo número: ");
         int num2 = scanner.nextInt();
         System.out.println("Informe a operação que deseja realizar, sendo: \n a= adição \n b= subtração \n c= multiplicação \n d= divisão");
-        String operador = scanner.next();
+        char operador = scanner.next().charAt(0);
 
-        if (operador == "a"){
+        if (operador == 'a'){
             System.out.println(num1 + " + " + num2 + " = " + (num1+num2));
-        } else if (operador == "b") {
+        } else if (operador == 'b') {
             System.out.println(num1 + " - " + num2 + " = " + (num1-num2));
-        } else if (operador == "c") {
+        } else if (operador == 'c') {
             System.out.println(num1 + " * " + num2 + " = " + num1*num2);
-        } else if (operador == "d") {
+        } else if (operador == 'd') {
             if(num2 != 0){
                 System.out.println(num1 + " / " + num2 + " = " + num1/num2);
             } else{
