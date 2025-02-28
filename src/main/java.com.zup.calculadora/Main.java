@@ -4,6 +4,7 @@ public class Main {
     public static void main (String[] args) {
         Sum sum = new Sum();
         Subtraction subtraction = new Subtraction();
+        Multiplication multiplication = new Multiplication();
 
         System.out.println("Digite o primeiro número: ");
         Scanner scanner = new Scanner(System.in);
@@ -18,7 +19,7 @@ public class Main {
         } else if (operador == 'b') {
             subtraction.subtract(num1, num2);
         } else if (operador == 'c') {
-            System.out.println(num1 + " * " + num2 + " = " + num1*num2);
+            multiplication.multiply(num1, num2);
         } else if (operador == 'd') {
             if(num2 != 0){
                 System.out.println(num1 + " / " + num2 + " = " + num1/num2);
