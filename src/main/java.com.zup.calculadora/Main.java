@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main (String[] args) {
         Sum sum = new Sum();
-
-
+        Subtraction subtraction = new Subtraction();
 
         System.out.println("Digite o primeiro número: ");
         Scanner scanner = new Scanner(System.in);
@@ -17,7 +16,7 @@ public class Main {
         if (operador == 'a'){
             sum.add(num1, num2);
         } else if (operador == 'b') {
-            System.out.println(num1 + " - " + num2 + " = " + (num1-num2));
+            subtraction.subtract(num1, num2);
         } else if (operador == 'c') {
             System.out.println(num1 + " * " + num2 + " = " + num1*num2);
         } else if (operador == 'd') {
