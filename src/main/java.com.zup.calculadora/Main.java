@@ -5,6 +5,7 @@ public class Main {
         Sum sum = new Sum();
         Subtraction subtraction = new Subtraction();
         Multiplication multiplication = new Multiplication();
+        Division division = new Division();
 
         System.out.println("Digite o primeiro número: ");
         Scanner scanner = new Scanner(System.in);
@@ -21,12 +22,8 @@ public class Main {
         } else if (operador == 'c') {
             multiplication.multiply(num1, num2);
         } else if (operador == 'd') {
-            if(num2 != 0){
-                System.out.println(num1 + " / " + num2 + " = " + num1/num2);
-            } else{
-                System.out.println("A divisão está ocorrendo para um número zero. Insira um número válido.");
-            }
-        } else{
+            division.divide(num1, num2);
+        } else {
             System.out.println("Insira um operador válido.");
         }
     }
